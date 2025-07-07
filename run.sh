@@ -23,13 +23,11 @@ git clone --depth=1 --branch="$SP_BRANCH" "$SP_REPO" "$SP_DIR"
 
 # Apply Patches
 echo "Applying patches..."
-sed -i 's/LOW_SPEED_LOCKOUT = 2/LOW_SPEED_LOCKOUT = False/g' "$OP_DIR/selfdrive/car/toyota/values.py"
-echo 'export FINGERPRINT="TOYOTA COROLLA TSS2"' >> "$OP_DIR/launch_env.sh"
+git -C "$OP_DIR" apply ../../patches/openpilot.patch
 echo "Patched openpilot."
 
 # For sunnypilot, we apply the same patches
-sed -i 's/LOW_SPEED_LOCKOUT = 2/LOW_SPEED_LOCKOUT = False/g' "$SP_DIR/selfdrive/car/toyota/values.py"
-echo 'export FINGERPRINT="TOYOTA COROLLA TSS2"' >> "$SP_DIR/launch_env.sh"
+git -C "$SP_DIR" apply ../../patches/sunnypilot.patch
 echo "Patched sunnypilot."
 
 
@@ -40,6 +38,7 @@ echo "Committing and pushing changes..."
 cd "$OP_DIR"
 git config user.name "Automated Bot"
 git config user.email "actions@github.com"
+git remote set-url origin "https://github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
 git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$OP_PATCH_BRANCH" --force
@@ -49,6 +48,7 @@ cd -
 cd "$SP_DIR"
 git config user.name "Automated Bot"
 git config user.email "actions@github.com"
+git remote set-url origin "https://github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
 git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$SP_PATCH_BRANCH" --force
