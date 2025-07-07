@@ -15,4 +15,4 @@
  fi
 
  export STAGING_ROOT="/data/safe_staging"
-+export FINGERPRINT="TOYOTA COROLLA TSS2"
++export FINGERPRINT="TOYOTA_COROLLA_TSS2"
