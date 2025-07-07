@@ -10,6 +10,14 @@ Efforts to upstream support for the 6MT TSS2 Corollas have stalled with a princi
 
 Discussion about this repository can be found in the [comma.ai openpilot Discord](https://discord.comma.ai) in the [2020-2022 6MT Corolla Thread underneath #toyota-lexus](https://discord.com/channels/469524606043160576/1391211035796439163)
 
+## How it Works
+
+A GitHub Actions workflow runs on a daily schedule to:
+
+1.  Clone the latest versions of openpilot and sunnypilot.
+2.  Apply the necessary patches from the `/patches` directory.
+3.  Force-push the patched code to the `op-nightly-dev` and `sp-staging-c3-new` branches in this repository.
+
 ## Usage
 
 You will install a patched version of openpilot or sunnypilot on your comma three device from this repository.
