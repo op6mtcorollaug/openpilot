@@ -6,9 +6,9 @@
 
 This is an automated repository that patches comma.ai openpilot's `nightly-dev` and sunnypilot's `staging-c3-new` branches to support 2019-2022 6MT TSS2 Corollas.
 
-Efforts to upstream support for the 2019-2022 6MT TSS2 Corollas have stalled with a principal developer of the 2019-2022 Corolla 6MT TSS2 unable to [contribute additional time for upstreaming](https://discord.com/channels/469524606043160576/1391211035796439163/1391232320790331472).
+Efforts to upstream support for the 2019-2022 6MT TSS2 Corollas have stalled with a principal developer of the 2019-2022 Corolla 6MT TSS2 unable to [contribute additional time for upstreaming](https://discord.com/channels/469524606043160576/1391211035796439163/1391232320790331472) (Discord membership required).
 
-Discussion about this repository can be found in the [comma.ai openpilot Discord](https://discord.comma.ai) in the [2019-2022 6MT Corolla Thread underneath #toyota-lexus](https://discord.com/channels/469524606043160576/1391211035796439163). If you have questions, please ask there, but not before reading this documentation, of course!
+Discussion about this repository can be found in the [comma.ai openpilot Discord](https://discord.comma.ai) in the [2019-2022 6MT Corolla Thread underneath #toyota-lexus](https://discord.com/channels/469524606043160576/1391211035796439163). **Note: You must first join the comma Discord using the invitation link above before you can access the specific Discord channel links.** If you have questions, please ask there, but not before reading this documentation, of course!
 
 ## How this repository Works
 
