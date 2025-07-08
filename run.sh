@@ -40,7 +40,7 @@ git config user.name "Automated Bot"
 git config user.email "actions@github.com"
 git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
-git commit -m "Apply 6MT TSS2 Corolla patches"
+GIT_AUTHOR_DATE='2021-08-08 00:00:00 +0000' GIT_COMMITTER_DATE='2021-08-08 00:00:00 +0000' git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$OP_PATCH_BRANCH" --force
 cd -
 
@@ -50,7 +50,7 @@ git config user.name "Automated Bot"
 git config user.email "actions@github.com"
 git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
-git commit -m "Apply 6MT TSS2 Corolla patches"
+GIT_AUTHOR_DATE='2021-08-08 00:00:00 +0000' GIT_COMMITTER_DATE='2021-08-08 00:00:00 +0000' git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$SP_PATCH_BRANCH" --force
 cd -
 
