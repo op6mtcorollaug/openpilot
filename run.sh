@@ -38,7 +38,7 @@ echo "Committing and pushing changes..."
 cd "$OP_DIR"
 git config user.name "Automated Bot"
 git config user.email "actions@github.com"
-git remote set-url origin "https://github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
+git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
 git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$OP_PATCH_BRANCH" --force
@@ -48,7 +48,7 @@ cd -
 cd "$SP_DIR"
 git config user.name "Automated Bot"
 git config user.email "actions@github.com"
-git remote set-url origin "https://github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
+git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY:-op6mtcorollaug/openpilot}.git"
 git add .
 git commit -m "Apply 6MT TSS2 Corolla patches"
 git push origin "HEAD:$SP_PATCH_BRANCH" --force
