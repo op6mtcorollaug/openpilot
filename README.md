@@ -39,6 +39,7 @@ Users will install a patched version of openpilot or sunnypilot on your comma th
 * There is no stop and go in 6MT TSS2 Corollas.
 * OP activates: In gears > 1st, and at > ~18mph. Below that, everything disengages (unless using sunnypilot, only ACC disengages).
 * See this video for how it behaves in openpilot: https://youtu.be/ITxknEpp9R8
+* TODO: SP with MADS description 
 
 ### Later Usage
 
