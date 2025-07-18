@@ -6,7 +6,7 @@
 
 This is an automated repository that patches comma.ai openpilot's `nightly-dev` and sunnypilot's `staging-c3-new` branches to support 2019-2022 6MT TSS2 Corollas.
 
-Efforts to upstream support for the 2019-2022 6MT TSS2 Corollas have stalled with a principal developer of the 2019-2022 Corolla 6MT TSS2 unable to [contribute additional time for upstreaming](https://discord.com/channels/469524606043160576/1391211035796439163/1391232320790331472) (Discord membership required).
+Efforts to upstream support for the 2019-2022 6MT TSS2 Corollas have stalled with a principal developer of the 2019-2022 Corolla 6MT TSS2 unable to [contribute additional time for upstreaming](https://discord.com/channels/469524606043160576/1391211035796439163/1391232320790331472) (join the comma Discord).
 
 Discussion about this repository can be found in the [comma.ai openpilot Discord](https://discord.comma.ai) in the [2019-2022 6MT Corolla Thread underneath #toyota-lexus](https://discord.com/channels/469524606043160576/1391211035796439163). **Note: You must first join the comma Discord using the invitation link above before you can access the specific Discord channel links.** If you have questions, please ask there, but not before reading this documentation, of course!
 
@@ -27,11 +27,11 @@ Users will install a patched version of openpilot or sunnypilot on your comma th
 1. Reset the comma three device. You can do this by tapping on the screen during bootup, uninstalling the software from the Settings menu, or using https://flash.comma.ai.
 2. Choose `Custom Software` when installing the software.
 3. In the text field, enter the following:
-   * sunnypilot - _The community of 2019-2022 6MT TSS2 Corolla users recommend this for users_
+   * sunnypilot - _The community of 2019-2022 6MT TSS2 Corolla users recommend this for users with MADS pre-enabled_
      * `op201920226mtcorollaug/sp-staging-c3-new`
-   * comma.ai openpilot - _Patched version of comma's software, but kept around more for upstreaming preview and testing_
+   * comma.ai openpilot - _Patched version of comma's software, kept around more for upstreaming preview and testing than actual usage_
      * `op201920226mtcorollaug/op-nightly-dev`
-     * If you have comma hardware issues, it's possible that comma might be lenient with you if you use this for support, but it's not guaranteed. Best to just keep the device using comma's unpatched codebase in dashcam mode.
+     * If you have comma hardware issues, it's possible that comma might be lenient with you if you use this for support, but it's really not guaranteed. It's best to switch the device to using comma's unpatched codebase in dashcam mode if you have hardware issues for support.
 5. That's it, you're done! The device will install the patched version of openpilot or sunnypilot.
 
 ## Expected Behavior
